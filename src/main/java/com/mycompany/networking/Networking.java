@@ -20,14 +20,14 @@ public class Networking {
         try {
             URL aSite = new URL("https://www.google.com/search?q=que+es+el+path&rlz=1C1UUXU_esCO1062CO1062&oq=que+es+el+path&aqs=chrome..69i57j0i512l9.5815j1j7&sourceid=chrome&ie=UTF-8#address");
             
-            System.out.println("Protocol: "+ aSite.getProtocol());
-            System.out.println("Authority: "+ aSite.getAuthority());
-            System.out.println("Host: "+ aSite.getHost());
-            System.out.println("Port: "+ aSite.getPort());
-            System.out.println("Path: "+ aSite.getPath());
-            System.out.println("Query: "+ aSite.getQuery());
-            System.out.println("File: "+ aSite.getFile());
-            System.out.println("Ref: "+ aSite.getRef());
+            System.out.println("Protocol: "+ aSite.getProtocol()); // expected output: https
+            System.out.println("Authority: "+ aSite.getAuthority()); // expected output: www.google.com
+            System.out.println("Host: "+ aSite.getHost()); // expected output: www.google.com
+            System.out.println("Port: "+ aSite.getPort()); // expected output: -1, can be altered bu typing a ":" after Host
+            System.out.println("Path: "+ aSite.getPath()); // expected output: /search,  path is expected after host or port if given
+            System.out.println("Query: "+ aSite.getQuery()); // expected output: q=que+es+el+path&rlz=1C1U.........=UTF-8. querty goes after "?" 
+            System.out.println("File: "+ aSite.getFile()); // expected output: /search?q=que+es+el+.......&sourceid=chrome&ie=UTF-8
+            System.out.println("Ref: "+ aSite.getRef()); // expected output: address,is anything that goes after "#" 
             
             
             
