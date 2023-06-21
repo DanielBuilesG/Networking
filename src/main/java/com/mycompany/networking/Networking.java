@@ -18,7 +18,7 @@ public class Networking {
     public static void main(String[] args) {
         
         try {
-            URL aSite = new URL("http://www.periodicoescuelaing.com");
+            URL aSite = new URL("https://www.google.com/search?q=que+es+el+path&rlz=1C1UUXU_esCO1062CO1062&oq=que+es+el+path&aqs=chrome..69i57j0i512l9.5815j1j7&sourceid=chrome&ie=UTF-8#address");
             
             System.out.println("Protocol: "+ aSite.getProtocol());
             System.out.println("Authority: "+ aSite.getAuthority());
