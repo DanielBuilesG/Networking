@@ -59,8 +59,7 @@ public class HttpServer {
                 }
             }
             
-            outputLine = defaultResponse();
-            out.println(outputLine);
+            
             createResponse(request, out);
             
 
