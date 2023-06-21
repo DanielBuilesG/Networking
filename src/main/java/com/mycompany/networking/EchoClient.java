@@ -36,6 +36,9 @@ public class EchoClient {
         while ((userInput = stdIn.readLine()) != null) {
             out.println(userInput);
             System.out.println("echo: " + in.readLine());
+            if (userInput.equals("Respuesta del servidor: Bye.")) {
+                break;
+            }
         }
         out.close();
         in.close();

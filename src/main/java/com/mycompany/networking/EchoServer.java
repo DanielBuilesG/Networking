@@ -5,7 +5,8 @@
 package com.mycompany.networking;
 
 /**
- *
+ * 
+ * 
  * @author daniel.builes
  */
 import java.net.*;
